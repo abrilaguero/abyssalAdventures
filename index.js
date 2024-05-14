@@ -1,25 +1,3 @@
-// USANDO LIB DE KEYPRESS
-// const configKeyboard = { prevent_repeat: true };
-
-// const keyboardEvent = new window.keypress.Listener(this, configKeyboard);
-
-// const pulseA = () => {
-//   console.log("pulsado a ");
-// };
-
-// const pulseAB = () => {
-//   console.log("pulsado a y b a la vez ");
-// };
-
-// const specialAttack = () => {
-//   console.log("especial");
-// };
-
-// keyboardEvent.simple_combo("a", pulseA);
-// keyboardEvent.simple_combo("a b", pulseAB);
-// keyboardEvent.sequence_combo("up down a b", specialAttack);
-
-// JUEGO
 let canvas;
 let ctx;
 let fps = 50;
@@ -219,23 +197,6 @@ class character {
     this.y = 1;
     this.img = img;
     this.key = false;
-
-    // this.right = true;
-    // this.move = (speed) => {
-    //   if (this.right) {
-    //     if (this.x < 400) {
-    //       this.x += speed;
-    //     } else {
-    //       this.right = false;
-    //     }
-    //   } else {
-    //     if (this.x > 50) {
-    //       this.x -= speed;
-    //     } else {
-    //       this.right = true;
-    //     }
-    //   }
-    // };
 
     this.margin = (x, y) => {
       let breakpoint = false;
